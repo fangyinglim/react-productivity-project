@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin-top: 2em;
+  margin-left: 0.5em;
+}
+
+input {
+  outline: none;
+  border: 2px solid turquoise;
+  border-radius: 0.5em;
+  height: 2em;
+  width: 20em;
+  margin: 0.5em;
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.514);
+  text-indent: 5px;
+}
+
+button {
+  height: 2em;
+  width: 2em;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.514);
+}
+
+button:hover {
+  border: 2px solid rgb(245, 187, 79);
+  position: relative;
+  left: 2px;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.514);
+}
+
+h4 {
+  margin-left: 0.5em;
+}
