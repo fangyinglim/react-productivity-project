@@ -17,7 +17,11 @@ function Form() {
     console.log(text);
     setTodoList([
       ...todoList,
-      { input: text, completed: false, id: new Date().getTime().toString() },
+      {
+        input: text,
+        completed: false,
+        id: new Date().getTime().toString(),
+      },
     ]);
     setText("");
   };
@@ -31,7 +35,7 @@ function Form() {
           +
         </button>
       </form>
-      <TodoList todoList={todoList} />
+      <TodoList todoList={todoList} setTodoList={setTodoList} />
     </div>
   );
 }
