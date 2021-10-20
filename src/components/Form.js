@@ -30,12 +30,21 @@ function Form() {
     <div>
       <form>
         <h4>To Do List</h4>
-        <input value={text} onChange={inputHandler} type="text" />
+        <input
+          value={text}
+          onChange={inputHandler}
+          type="text"
+          placeholder="e.g. take cat to vet"
+        />
         <button onClick={submitHandler} type="submit">
           +
         </button>
       </form>
-      <TodoList todoList={todoList} setTodoList={setTodoList} />
+      <TodoList
+        className="todolist-notepad"
+        todoList={todoList}
+        setTodoList={setTodoList}
+      />
     </div>
   );
 }

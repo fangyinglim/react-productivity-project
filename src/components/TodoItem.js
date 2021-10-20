@@ -20,6 +20,14 @@ function TodoItem({ todo, todoList, setTodoList }) {
     );
   };
 
+  const deleteHandle = () => {
+    setTodoList(
+      todoList.filter((each) => {
+        return each.id !== id;
+      })
+    );
+  };
+
   return (
     <div key={id} className="list-item">
       <div
@@ -30,7 +38,9 @@ function TodoItem({ todo, todoList, setTodoList }) {
       <button onClick={completeHandle} className="list-btn">
         ✔
       </button>
-      <button className="list-btn">✗</button>
+      <button onClick={deleteHandle} className="list-btn">
+        ✗
+      </button>
     </div>
   );
 }
