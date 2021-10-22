@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-productivity-project/static/css/main.f5f33ca0.chunk.css",
-    "main.js": "/react-productivity-project/static/js/main.b555c085.chunk.js",
-    "main.js.map": "/react-productivity-project/static/js/main.b555c085.chunk.js.map",
+    "main.css": "/react-productivity-project/static/css/main.756e042c.chunk.css",
+    "main.js": "/react-productivity-project/static/js/main.5adf5bca.chunk.js",
+    "main.js.map": "/react-productivity-project/static/js/main.5adf5bca.chunk.js.map",
     "runtime-main.js": "/react-productivity-project/static/js/runtime-main.50dd388a.js",
     "runtime-main.js.map": "/react-productivity-project/static/js/runtime-main.50dd388a.js.map",
-    "static/js/2.81a6c6bb.chunk.js": "/react-productivity-project/static/js/2.81a6c6bb.chunk.js",
-    "static/js/2.81a6c6bb.chunk.js.map": "/react-productivity-project/static/js/2.81a6c6bb.chunk.js.map",
+    "static/js/2.3a7bdf06.chunk.js": "/react-productivity-project/static/js/2.3a7bdf06.chunk.js",
+    "static/js/2.3a7bdf06.chunk.js.map": "/react-productivity-project/static/js/2.3a7bdf06.chunk.js.map",
     "index.html": "/react-productivity-project/index.html",
-    "static/css/main.f5f33ca0.chunk.css.map": "/react-productivity-project/static/css/main.f5f33ca0.chunk.css.map",
-    "static/js/2.81a6c6bb.chunk.js.LICENSE.txt": "/react-productivity-project/static/js/2.81a6c6bb.chunk.js.LICENSE.txt"
+    "static/css/main.756e042c.chunk.css.map": "/react-productivity-project/static/css/main.756e042c.chunk.css.map",
+    "static/js/2.3a7bdf06.chunk.js.LICENSE.txt": "/react-productivity-project/static/js/2.3a7bdf06.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.50dd388a.js",
-    "static/js/2.81a6c6bb.chunk.js",
-    "static/css/main.f5f33ca0.chunk.css",
-    "static/js/main.b555c085.chunk.js"
+    "static/js/2.3a7bdf06.chunk.js",
+    "static/css/main.756e042c.chunk.css",
+    "static/js/main.5adf5bca.chunk.js"
   ]
 }
