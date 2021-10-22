@@ -6,15 +6,15 @@ const useFetch = (url) => {
   useEffect(() => {
     fetch(url).then((res) =>
       res.json().then((data) => {
-        console.log(data.items[0].readings);
+        // console.log(data.items[0].readings);
         let totalTemp = data.items[0].readings
           .map((data) => data.value)
           .reduce(function (previous, current) {
             return previous + current;
           });
-        console.log(totalTemp);
+        // console.log(totalTemp);
         let avgTemp = totalTemp / data.items[0].readings.length;
-        console.log(avgTemp);
+        // console.log(avgTemp);
         setWeather(avgTemp);
       })
     );

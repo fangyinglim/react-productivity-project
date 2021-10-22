@@ -3,3 +3,29 @@
   left: 50%;
   top: 7%;
 }
+
+.weather-header {
+  display: inline-block;
+}
+
+.weather-btn {
+  border-radius: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin-left: 0.5em;
+}
+
+.weather-btn:hover {
+  border: none;
+  box-shadow: none;
+  bottom: 1px;
+  left: -2px;
+}
+
+.weather-info {
+  text-align: center;
+  min-height: 150px;
+  min-width: 250px;
+  border: 2px solid black;
+}

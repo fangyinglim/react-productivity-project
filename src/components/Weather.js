@@ -1,27 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import useFetch from "./useFetch";
 import "./Weather.css";
 
 function Weather() {
-  let todayDate = new Date().toISOString().slice(0, 19).replace(/:/g, "%3A");
-  console.log(todayDate);
+  const [todayDate, setTodayDate] = useState(new Date());
+  const [timeDiff, setTimeDiff] = useState(
+    new Date().getTimezoneOffset() * 60000
+  );
+  let adjustedDate = new Date(todayDate - timeDiff)
+    .toISOString()
+    .slice(0, 19)
+    .replace(/:/g, "%3A");
+  console.log(adjustedDate);
 
-  let url = `https://api.data.gov.sg/v1/environment/air-temperature?date_time=${todayDate}`;
-  console.log(url);
+  let url = `https://api.data.gov.sg/v1/environment/air-temperature?date_time=${adjustedDate}`;
 
   let weather = useFetch(url);
-  console.log(weather);
 
   const weatherRefreshHandle = () => {
-    // console.log(weather);
-    // return weather;
+    setTodayDate(new Date());
+    setTimeDiff(new Date().getTimezoneOffset() * 60000);
   };
 
   return (
     <div className="weather-container">
-      <header>Weather</header>
-      <button onClick={weatherRefreshHandle}>🔄</button>
-      <div>{parseInt(weather).toFixed(1)}</div>
+      <header>
+        <h4 className="weather-header">Weather</h4>
+        <button className="weather-btn" onClick={weatherRefreshHandle}>
+          🔄
+        </button>
+      </header>
+      <div className="weather-info">
+        <p>Avg Temp in SG:</p>
+        <div>{parseInt(weather).toFixed(1)}</div>
+        <p>Avg Humidity in SG:</p>
+      </div>
     </div>
   );
 }
