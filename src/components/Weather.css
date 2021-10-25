@@ -24,8 +24,43 @@
 }
 
 .weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   min-height: 150px;
   min-width: 250px;
   border: 2px solid black;
+  background: linear-gradient(rgb(181, 222, 255), rgb(215, 233, 247));
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.61);
+}
+
+.weather-info-refreshed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 150px;
+  min-width: 250px;
+  background: linear-gradient(rgb(181, 222, 255), rgb(215, 233, 247));
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.61);
+  animation: bordereffect 0.75s infinite;
+}
+
+@keyframes bordereffect {
+  0% {
+    border: 2px solid black;
+  }
+  25% {
+    border-top: 2px solid white;
+  }
+  50% {
+    border-right: 2px solid white;
+  }
+  75% {
+    border-bottom: 2px solid white;
+  }
+  100% {
+    border: 2px solid white;
+  }
 }

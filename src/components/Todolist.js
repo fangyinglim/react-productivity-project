@@ -2,7 +2,7 @@ import React from "react";
 import TodoItem from "./TodoItem";
 
 const Todolist = ({ todoList, setTodoList }) => {
-  console.log(todoList);
+  // console.log(todoList);
   return (
     <>
       {todoList.map((todo) => {
